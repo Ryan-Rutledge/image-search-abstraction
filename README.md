@@ -5,7 +5,7 @@ This web application returns an array of simplified objects containing search re
 
 #### Example
 
-Submitting `/searchterm` will search http://duckduckgo.com for 'searchterm' and return an array of objects like the following:
+Submitting `/search/searchterm` will search http://duckduckgo.com for 'searchterm' and return an array of objects like the following:
 
 ```json
 [{
@@ -19,13 +19,13 @@ Submitting `/searchterm` will search http://duckduckgo.com for 'searchterm' and 
 
 Results can be paged through the offset query.
 
-Submitting `/searchterm?offset=3` will offset the search results for 'searchterm' by three.
+Submitting `/search/searchterm?offset=3` will offset the search results for 'searchterm' by three.
 
 If an offset is not supplied, it will default to zero.
 
 ### History
 
-The homepage will return an array of recent searches like the following:
+Submitting `/history` will return an array of recent searches like the following:
 
 ```json
 [{
