@@ -1,11 +1,6 @@
 var app = require('express')();
 var search = require('./search');
 
-// Recent search route
-app.get('/history', function(req, res) {
-    res.json(search.recent);
-});
-
 // Search Route
 app.get('/:search', function(req, res) {
     search.query(req.params.search, req.query.offset, function(results) {
@@ -13,9 +8,9 @@ app.get('/:search', function(req, res) {
     });
 });
 
-// Homepage
+// Homepage shows search history
 app.get('/', function(req, res) {
-    res.send('Image Search Abstraction');
+    res.json(search.recent);
 });
 
 app.listen(process.env.PORT, function() {
