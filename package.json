@@ -1,0 +1,23 @@
+{
+  "name": "image-search-abstraction",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp API Project #4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryan-Rutledge/image-search-abstraction.git"
+  },
+  "author": "Ryan Rutledge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ryan-Rutledge/image-search-abstraction/issues"
+  },
+  "homepage": "https://github.com/Ryan-Rutledge/image-search-abstraction#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
