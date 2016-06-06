@@ -39,13 +39,13 @@ function getFormatted(data) {
 }
 
 function recordSearch(query) {
-    recentSearches.push({
+    recentSearches.unshift({
         term: decodeURI(query),
         when: String(new Date())
     });
     
     if (recentSearches.length > 10) {
-        recentSearches.shift();
+        recentSearches.pop();
     }
 }
 
